@@ -1,0 +1,31 @@
+What is git?
+
+Git is used to track the files.
+It will maintain multiple versions of the same file.
+It is platform-independent.
+It is free and open-source.
+They can handle larger projects efficiently.
+They save time and developers can fetch and create pull requests without switching.
+It is 3rd generation of vcs.
+
+
+Create a file                              :           	touch filename
+Now add that file                          :           	git add . (Dot represents current directory)
+commit the file with message      	   :           	git commit -m "commit message you want"  filename
+To see details of that file                :           	git log
+To untrack                                 :           	git rm --cached filename
+To show commit file                        :           	git show commit id file_name
+To see only commit id's and msgs           :          	git log --oneline
+To see last 2 commits                      :          	git log -2 
+To see all commits for a single file       :        	git log --follow --all filename
+
+
+Git config:
+
+git config user.name "username"
+git config user.email "userxyz@gmail.com"
+
+Git ignore:
+
+vi .gitignore
+*.txt
